@@ -1,0 +1,8 @@
+DIST String-Similarity-1.03.tar.gz 15148 RMD160 fb4cfe00792027708334567291d59a55d18eda00 SHA1 f4b688ac6f063088b34cef3ed41434123d9903a3 SHA256 cc5bdefa9a590c28c8548d075b7967eeb9131b3fc26c5cbbd988b344fc51bfdf
+EBUILD String-Similarity-1.03.ebuild 558 RMD160 bed7af26ad3dc104b7661755e2563e5ef067f4ac SHA1 b72c1d0994cdca5bf17e1ff1073ab7daabf0cb98 SHA256 8275b79fd5573e58a3502c3fdaa31ae40f695cc963179a530b69c555d7dc5187
+MD5 775a4f57cd67aa2ff6f434b14449bdc6 String-Similarity-1.03.ebuild 558
+RMD160 bed7af26ad3dc104b7661755e2563e5ef067f4ac String-Similarity-1.03.ebuild 558
+SHA256 8275b79fd5573e58a3502c3fdaa31ae40f695cc963179a530b69c555d7dc5187 String-Similarity-1.03.ebuild 558
+MD5 4528c6a12bc32709a34ee9f2f4790142 files/digest-String-Similarity-1.03 265
+RMD160 0dcffb775cb96b8a5d49eeaf1d5c481a482ee1f6 files/digest-String-Similarity-1.03 265
+SHA256 0eecb60853475211b19fa01fe877b079a82af7103869fa57e7eb9cc5ab901ae0 files/digest-String-Similarity-1.03 265

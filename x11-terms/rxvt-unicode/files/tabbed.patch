@@ -1,0 +1,14 @@
+--- src/perl/tabbed.orig	2007-08-08 19:55:59.000000000 +0200
++++ src/perl/tabbed	2007-08-08 19:59:37.000000000 +0200
+@@ -102,8 +102,9 @@
+    my %our_props = map +($_ => undef), $self->XListProperties ($self->parent);
+ 
+    delete $our_props{$self->XInternAtom ($_)}
+-      for qw(WM_STATE WM_ICON_SIZE
+-             _NET_WM_VISIBLE_NAME _NET_WM_VISIBLE_ICON_NAME _NET_WM_ICON_GEOMETRY _NET_FRAME_EXTENTS);
++     for qw(WM_STATE WM_ICON_SIZE _NET_WM_VISIBLE_NAME
++            _NET_WM_VISIBLE_ICON_NAME _NET_WM_ICON_GEOMETRY _NET_FRAME_EXTENTS
++            _NET_WM_DESKTOP _NET_WM_STATE);
+ 
+    for my $atom ($tab->XListProperties ($tab->parent)) {
+       my ($type, $format, $items) = $self->XGetWindowProperty ($tab->parent, $atom);

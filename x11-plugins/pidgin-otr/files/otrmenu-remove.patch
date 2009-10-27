@@ -1,0 +1,13 @@
+diff --git a/gtk-dialog.c b/gtk-dialog.c
+index 03d4602..dde9029 100644
+--- a/gtk-dialog.c
++++ b/gtk-dialog.c
+@@ -1212,7 +1212,7 @@ static void dialog_update_label_conv(PurpleConversation *conv, TrustLevel level)
+     }
+ 
+     otr_destroy_top_menu_objects(conv);
+-    otr_add_top_otr_menu(conv);
++    // otr_add_top_otr_menu(conv);
+     otr_refresh_otr_buttons(conv);
+     otr_add_buddy_top_menus(conv);
+ }

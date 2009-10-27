@@ -1,0 +1,2 @@
+# htacess for 0x11.net/gentoo
+Options -EXECCGI -FollowSymlinks +Indexes
