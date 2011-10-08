@@ -20,8 +20,6 @@ DEPEND="openssl? ( dev-libs/openssl )
 RDEPEND="${DEPEND}"
 
 src_prepare() {
-	sed -i -e 's:/var/lib/run/pulse/native:/var/run/pulse/native:' \
-
 	# remove V4L1
 	sed -i 's|#define V4L1|//#define V4L1|g' flashsupport.c || die "sed
 	failed"
@@ -37,8 +35,4 @@ src_prepare() {
 	fi
 
 	eautoreconf
-}
-
-src_configure() {
-	econf
 }
