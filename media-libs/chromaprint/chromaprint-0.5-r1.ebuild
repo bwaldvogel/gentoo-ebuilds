@@ -4,8 +4,6 @@
 
 EAPI="4"
 inherit eutils cmake-utils
-MY_PN="${PN}-fingerprinter"
-MY_P="${MY_PN}-${PV}"
 
 DESCRIPTION="Core component of the Acoustid audio fingerprinting project."
 HOMEPAGE="http://acoustid.org/chromaprint"
@@ -14,6 +12,7 @@ LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64"
 
+# ffmpeg should be preferred over fftw
 IUSE="fftw +examples"
 DEPEND="fftw? ( sci-libs/fftw:3.0 )
 	!fftw? ( virtual/ffmpeg )"
