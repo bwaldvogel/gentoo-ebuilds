@@ -14,7 +14,7 @@ LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="fftw examples"
+IUSE="fftw +examples"
 DEPEND="fftw? ( sci-libs/fftw:3.0 )
 	!fftw? ( virtual/ffmpeg )"
 
