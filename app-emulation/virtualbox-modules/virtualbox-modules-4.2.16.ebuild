@@ -1,11 +1,11 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/virtualbox-modules/virtualbox-modules-4.2.10.ebuild,v 1.1 2013/03/15 15:38:02 polynomial-c Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/virtualbox-modules/virtualbox-modules-4.2.16.ebuild,v 1.1 2013/07/08 14:50:05 polynomial-c Exp $
 
 # XXX: the tarball here is just the kernel modules split out of the binary
 #      package that comes from virtualbox-bin
 
-EAPI=4
+EAPI=5
 
 inherit eutils linux-mod user
 
@@ -42,6 +42,7 @@ src_prepare() {
 
 	if kernel_is -ge 3 7 0 ; then
 		epatch "${FILESDIR}"/fix_4.2.10_VM_RESERVED.patch
+		epatch "${FILESDIR}"/fix_4.2.16_MAX_PRIO.patch
 	fi
 
 	if use pax_kernel && kernel_is -ge 3 0 0 ; then
